@@ -7,7 +7,3 @@ spring:
   jpa:
     hibernate.ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    
-    
-welcome:
-  message: DEV env- Welcome to Spring cloud config server
