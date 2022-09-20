@@ -9,6 +9,11 @@ spring:
     hibernate.ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
-    
+  cloud:
+    vault:
+      host: localhost
+      port: 8200
+      scheme: http
+      token: hvs.0d61KLdFpo187elNDaVuMrRP
   cache:
     type: redis
