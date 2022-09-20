@@ -15,5 +15,9 @@ spring:
       port: 8200
       scheme: http
       token: hvs.0d61KLdFpo187elNDaVuMrRP
+      kv:
+        enabled: true
+        profile-separator: /
+        backend: kv # env based profiles are created inside kv in vault
   cache:
     type: redis
