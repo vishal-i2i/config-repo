@@ -14,16 +14,6 @@ spring:
     hibernate.ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
-  cloud:
-    vault:
-      host: localhost
-      port: 8200
-      scheme: http
-      token: hvs.G2S7fGU3k76Hp85V4sRZnm5N
-      kv:
-        enabled: true
-        profile-separator: /
-        backend: kv # env based profiles are created inside kv in vault
   cache:
     type: redis
 
