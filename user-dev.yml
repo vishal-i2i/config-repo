@@ -3,8 +3,8 @@ spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/dev_ideas2it
-    username: root
-    password: I22266@i2i
+    username: ${dbuser}
+    password: ${dbpass}
   jpa:
     hibernate.ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
