@@ -21,3 +21,6 @@ spring:
         backend: kv # env based profiles are created inside kv in vault
   cache:
     type: redis
+  config:
+    import: 
+    - vault://
