@@ -16,7 +16,7 @@ spring:
       host: localhost
       port: 8200
       scheme: http
-      token: hvs.yNa7JQhmBnLb7Z7aEaZ6Cbor
+      token: hvs.G2S7fGU3k76Hp85V4sRZnm5N
       kv:
         enabled: true
         profile-separator: /
