@@ -6,7 +6,8 @@ spring:
     import: 
     - vault://
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
+    # driverClassName: com.mysql.jdbc.Driver -- deprecated
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/dev_ideas2it
     username: ${dbuser}
     password: ${dbpass}
