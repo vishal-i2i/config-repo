@@ -1,9 +1,19 @@
+
 spring:
+  application:
+    name: user
+  config:
+    import: 
+    - vault://
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/local_ideas2it
-    username: root
-    password: I22266@i2i
+    # driverClassName: com.mysql.jdbc.Driver -- deprecated
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dev_ideas2it
+    username: ${dbuser}
+    password: ${dbpass}  #I22266@i2i
   jpa:
     hibernate.ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+  cache:
+    type: redis
